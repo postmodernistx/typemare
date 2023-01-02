@@ -1,0 +1,2 @@
+# typemare
+TypeScript nightmares (solved?)
