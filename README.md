@@ -11,3 +11,13 @@ data.id;
 ```js
 function onEnter(el: HTMLElement, done: gsap.Callback) {}
 ```
+
+## padStart is not defined
+In `tsconfig.json`
+```js{3}
+{
+  "compilerOptions": {
+     "lib": ["es6", "es2017", "es2017.string", "dom"],
+  }
+}
+```
