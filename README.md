@@ -21,3 +21,10 @@ In `tsconfig.json`
   }
 }
 ```
+
+## Interface with dynamic keys
+```ts
+interface ISomeDynamicObject {
+  [key: number]: SomeOtherArrayType[];
+}
+```
