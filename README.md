@@ -27,4 +27,6 @@ In `tsconfig.json`
 interface ISomeDynamicObject {
   [key: number]: SomeOtherArrayType[];
 }
+// or
+const someObject: Record<number, SomeOtherArrayTyp[]> = {};
 ```
