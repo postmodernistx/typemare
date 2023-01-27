@@ -30,3 +30,17 @@ interface ISomeDynamicObject {
 // or
 const someObject: Record<number, SomeOtherArrayTyp[]> = {};
 ```
+
+## Define a range of numbers
+```ts
+type Enumerate<N extends number, Acc extends number[] = []> = Acc['length'] extends N
+  ? Acc[number]
+  : Enumerate<N, [...Acc, Acc['length']]>;
+
+type IntRange<F extends number, T extends number> = Exclude<Enumerate<T>, Enumerate<F>>;
+
+class SingleCard {
+  suit: 'clubs' | 'diamonds' | 'hearts' | 'spades';
+  rank: IntRange<1, 13>;
+}
+```
