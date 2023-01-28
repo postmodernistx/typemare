@@ -44,3 +44,8 @@ class SingleCard {
   rank: IntRange<1, 13>;
 }
 ```
+
+## I hate my dev life
+```ts
+// @ts-ignore
+```
