@@ -46,6 +46,8 @@ class SingleCard {
 ```
 
 ## Get keys from interface and use as type in another interface
+https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-1.html#keyof-and-lookup-types
+
 ```ts
 interface INutritionalValues {
   calcium: 0;
