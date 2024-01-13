@@ -45,6 +45,18 @@ class SingleCard {
 }
 ```
 
+## Get keys from interface and use as type in another interface
+```ts
+interface INutritionalValues {
+  calcium: 0;
+  iron: 0;
+}
+
+interface IField {
+  id: keyof INutritionalValues; // must be calcium or iron as defined in INutritionalValues
+}
+```
+
 ## I hate my dev life
 ```ts
 // @ts-ignore
