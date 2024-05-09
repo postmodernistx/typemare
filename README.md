@@ -22,6 +22,13 @@ In `tsconfig.json`
 }
 ```
 
+## Return type of setTimeout in Vue
+```vue
+<script lang="ts">
+const timer: Ref<ReturnType<typeof setTimeout> | null> = ref(null);
+</script>
+```
+
 ## Interface with dynamic keys
 ```ts
 interface ISomeDynamicObject {
